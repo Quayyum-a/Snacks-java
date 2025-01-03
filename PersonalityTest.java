@@ -70,9 +70,9 @@ public class PersonalityTest {
         int thinker = 0, feeler = 0;
         int judging = 0, perceiving = 0;
 
-        for (int i = 0; i < responses.length(); i++) {
-            char answer = responses.charAt(i);
-            switch (i) {
+        for (int count = 0; count < responses.length(); count++) {
+            char answer = responses.charAt(count);
+            switch (count) {
                 case 0, 4, 8, 12, 16 -> {
                     if (answer == 'A') introvert++;
                     else extrovert++;
@@ -107,13 +107,13 @@ public class PersonalityTest {
         List<String> thinkingFeeling = new ArrayList<>();
         List<String> judgingPerceiving = new ArrayList<>();
 
-        for (int i = 0; i < responses.length(); i++) {
-            char answer = responses.charAt(i);
-            switch (i) {
-                case 0, 4, 8, 12, 16 -> introExtro.add(selectedAnswers.get(i));
-                case 1, 5, 9, 13, 17 -> sensingIntuition.add(selectedAnswers.get(i));
-                case 2, 6, 10, 14, 18 -> thinkingFeeling.add(selectedAnswers.get(i));
-                case 3, 7, 11, 15, 19 -> judgingPerceiving.add(selectedAnswers.get(i));
+        for (int count = 0; count < responses.length(); count++) {
+            char answer = responses.charAt(count);
+            switch (count) {
+                case 0, 4, 8, 12, 16 -> introExtro.add(selectedAnswers.get(count));
+                case 1, 5, 9, 13, 17 -> sensingIntuition.add(selectedAnswers.get(count));
+                case 2, 6, 10, 14, 18 -> thinkingFeeling.add(selectedAnswers.get(count));
+                case 3, 7, 11, 15, 19 -> judgingPerceiving.add(selectedAnswers.get(count));
             }
         }
 
